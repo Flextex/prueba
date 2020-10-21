@@ -20,7 +20,7 @@ http://www.burning.me/2011/12/my-journey-to-a-responsive-website/
 http://webdesignerwall.com/tutorials/css-elastic-videos
 -->
 
-<title>GMEXTv</title>
+<title>DEPORTES</title>
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -43,9 +43,9 @@ var t="3c6c696e6b20687265663d227374796c652e637373222072656c3d227374796c657368656
 
 <!-- begin header -->
 <header>
-<span id="siteName"><a href="/"><span>GMEX</span>TV</a></span>
+<span id="siteName"><a href="/"><span>DEPORTES</span>TV</a></span>
 <span id="siteTagline">Publisher web site</span>
-<span class="button"><a href="#contact">ACTUALIZAR!</a></span>
+<span class="button"><a href="/">ACTUALIZAR!</a></span>
 <img src="images/baner02.jpg" alt="">
 </header>
 <!-- / header -->
@@ -65,29 +65,36 @@ var t="3c6e61763e0d0a3c756c3e0d0a3c6c693e3c6120687265663d222f223e43414e414c313c2
 //-->
 </script>
 <!-- / nav -->
-<a href="https://bit.ly/2tGM8Ud" target="_blank"><img src="images/baner.jpg"></a>
+<a href="https://hotm.art/CCXRRPlc" target="_blank"><img src="images/baner.jpg"></a>
 <!-- page content --> 
 <section id="pageContent">
 
-<h1>Estás A Punto De Descubrir <strike>El Simple Sistema Copia y Pega</strike> Que Yo Utilizo.</h1>
+<h1>Estás A Punto De Descubrir <strike>El Simple Sistema de ver anuncios</strike> Que Yo Utilizo.</h1>
 
 <h2>Paso A Paso Que Cualquiera Puede Usar Para Ganar Un Pago Entre $ 100 - $ 150 Cada Día Con Solo 30 Minutos De Trabajo ...!</h2> 
-<span class="button" id="download"><a target="_blank" href="https://bit.ly/2tGM8Ud"> DESCARGA EL CURSO Ahora mismo que esperas &darr;</a></span>
+<span class="button" id="download"><a target="_blank" href="https://hotm.art/CCXRRPlc"> DESCARGA EL CURSO Ahora mismo que esperas &darr;</a></span>
+<h4>COMO GANAR DINERO VIENDO ANUNNCIOS VER VIDEO ABAJO</h4>
 <!-- partial:index.partial.html -->
+<!-- embedded video -->
+<div class="vid">
+<iframe src="https://player.vimeo.com/video/336253039?autoplay=0&amp;title=0&amp;byline=0&amp;wmode=transparent&amp;autopause=0" scrolling="no" allowfullscreen="true" width="980" height="550" frameborder="0"></iframe>
+</div>
+<!-- /embedded video -->
 <!-- Plyr resources and browser polyfills are specified in the pen settings -->
-<!-- partial --> 
+<!-- partial -->
+<h4 id="about">GANAR DINERO POR INTERNET: Método 100% real</h4>
+<p>Te presentamos una increíble oportunidad para generar ingresos en Internet mediante la promoción de nuestro producto "GANA DINERO VIENDO ANUNCIOS", es un producto centrado en GANAR DINERO POR INTERNET un nicho que como ya sabemos es de los mejores a nivel de ventas de Productos Digitales <a target="_blank" href="https://bit.ly/2Kqy6et">Leer mas</a>.</p> 
 <h5 id="contact">Redes Sociales</h5>
 <a target="_blank" href="https://bit.ly/2tGM8Ud"><img src="images/icons/gmail.png" alt="" class="icon" /></a>
 <a target="_blank" href="https://bit.ly/2tGM8Ud"><img src="images/icons/twitter.png" alt="" class="icon" /></a>
 <a target="_blank" href="https://bit.ly/2tGM8Ud"><img src="images/icons/facebook.png" alt="" class="icon" /></a>
 <a target="_blank" href="https://bit.ly/2tGM8Ud"><img src="images/icons/google+color.png" alt="" class="icon" /></a>
-<a target="_blank" href="https://bit.ly/2tGM8Ud"><img src="images/icons/linkedin.png" alt="" class="icon" /></a>
-
+<a target="_blank" href="https://hotm.art/CCXRRPlc"><img src="images/icons/linkedin.png" alt="" class="icon" /></a>
 </section><!-- /page content -->
 
 <!-- begin footer -->
 <footer>
-&copy;2020 <a href="/">GMEX</a> | <a href="/">Html5xcss3.com</a>
+&copy;2020 <a href="/">DEPORTES</a> | <a href="/">Html5xcss3.com</a>
 </footer>
 <!-- /footer -->
 
