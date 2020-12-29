@@ -32,7 +32,16 @@ body {
 }
 
 .countdown-container {
+	/* Flexbox */
+	display:flex;
+	flex-flow:row wrap;
+		/* Flexbox */
 	display: flex;
+	justify-content:space-between;
+	align-items:center;
+
+	flex-direction:row;
+	flex-wrap:wrap;
 }
 
 .time {
