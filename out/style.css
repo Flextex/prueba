@@ -12,7 +12,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	font-family: 'Muli', sans-serif;
-	font-size: 14px;
+	font-size: 3px;
 	height: 100vh;
 	overflow: hidden;
 	margin: 0;
@@ -36,6 +36,7 @@ body {
 	/* Flexbox */
 	display:flex;
 	flex-flow:row wrap;
+	font-size: 14px;
 }
 
 .time {
