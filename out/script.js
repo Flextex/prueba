@@ -1,5 +1,5 @@
 const body = document.body;
-const endTime = new Date('December 30 2020 15:00:00');
+const endTime = new Date('December 31 2020 15:00:00');
 const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
