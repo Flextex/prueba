@@ -20,11 +20,11 @@ var hostname = extractHostname(document.referrer);
 var blackdomains = "google.com";
 var blacklist = blackdomains.split(","); 
 
-var whitedomains = "http://mica500.herokuapp.com/deporte";
+var whitedomains = "https://diexsport.blogspot.com/";
 var whitelist = whitedomains.split(",");
 
 if (isInArray(hostname, blacklist) || !isInArray(hostname, whitelist) || !document.referrer) {
-  document.location.href = "https://diexsport.blogspot.com/";
+  document.location.href = "http://mica500.herokuapp.com/deporte/";
 }
 </script>
 
