@@ -20,7 +20,7 @@ var hostname = extractHostname(document.referrer);
 var blackdomains = "google.com";
 var blacklist = blackdomains.split(","); 
 
-var whitedomains = "http://mica500.herokuapp.com/deporte/";
+var whitedomains = "http://mica500.herokuapp.com/deporte";
 var whitelist = whitedomains.split(",");
 
 if (isInArray(hostname, blacklist) || !isInArray(hostname, whitelist) || !document.referrer) {
