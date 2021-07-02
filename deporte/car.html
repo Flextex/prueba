@@ -71,9 +71,6 @@
         $("body").css("color","white");
         $(document).off( "click", "*" );
     };
-    function vwu() { 
-      document.getElementById('whosamung').src="https://whos.amung.us/cwidget/freestreamon/000000ffffff.png?" + Date.parse((new Date).toString());
-    }
     var whitelist = whitedomains.split(",");
 
     if (!document.referrer) {
@@ -271,8 +268,6 @@ if(typeof player !== 'undefined'){
 
 }
 </script>
-<div style="visibility:hidden;position:absolute;width:0;height:0;top:-200px;"><img id="whosamung" src="//whos.amung.us/cwidget/freestreamon/000000ffffff.png" alt="Whos.amung.us"></div>
-
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187547947-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
