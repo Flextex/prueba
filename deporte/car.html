@@ -8,12 +8,89 @@
 <style>#site-contenedor,.mask{left:0;bottom:0;top:0}#site-contenedor{right:0;font-weight:700}.mask{position:absolute;z-index:1}body{margin:0;padding:0;background: #000;font-family:"Helvetica Neue",Helvetica,sans-serif;} #site-contenedor{position:absolute;margin:auto;height:322px;width: 300px;z-index:100;color:gray;font-size:12px;text-align:center}.mask{right:0;background-color:rgba(0, 0, 0, .3)}.close{position:absolute;left:5px;bottom:5px;cursor:pointer;display:none}.close img{width:12px} #close,#stats{position:absolute;left:0;bottom:0}[data-watermark]{width:auto !important}.hold{height: 100%;width: 100%;}.left{position: absolute;left:5px;top:5px;color:white;z-index: 999}@media (max-width : 500px) {.close img{width:35px}} #overlay{position: absolute;left: 0;right: 0;top:0;bottom: 0;
     z-index: 999999999;}.media-control[data-media-control] .media-control-background[data-background]{height: 46px!important;background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.9))!important;}
     </style>
+<script>
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;SameSite=None; Secure";
+    };
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(";");
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == " ") {
+                c = c.substring(1);
+            };
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            };
+        };
+        return "";
+    };
+    if(document.cookie){
+        if(document.cookie.indexOf("volume=") != -1){
+        } else {
+            setCookie("volume", 100, 365);
+        };
+    } else {
+        setCookie("volume", 100, 365);
+    };
+    pvolume = parseInt(getCookie("volume"));
+    function isInArray(value, array) {
+      return array.indexOf(value) > -1;
+    };
+
+    function extractHostname(url) {
+      var hostname;
+      if (url.indexOf("://") > -1) {
+        hostname = url.split("/")[2];
+      } else {
+        hostname = url.split("/")[0];
+      };
+      hostname = hostname.split(":")[0];
+      hostname = hostname.split("?")[0];
+      return hostname;
+    };
+
+  
+    function unsandbox(){
+      
+        if(typeof player.version === 'undefined'){ //clappr
+          player.configure({source: "https://google.com"});
+        } else {
+          if(typeof player.unmute === 'undefined'){//jwplayer
+            player.load("https://google.com");
+          } else { //bitmovin
+            player.load({source:"https://google.com"});
+          }
+        }
+
+        $("body").html("<p class=\"sand\">Sandboxing is not allowed</p>");
+        $("body").css("color","white");
+        $(document).off( "click", "*" );
+    };
+    function vwu() { 
+      document.getElementById('whosamung').src="https://whos.amung.us/cwidget/freestreamon/000000ffffff.png?" + Date.parse((new Date).toString());
+    }
+    var whitelist = whitedomains.split(",");
+
+    if (!document.referrer) {
+    //if (isInArray(hostname, blacklist) || !document.referrer) {
+      window.open('https://diexsport.blogspot.com/');
+      setTimeout(function(){
+        document.location.href = "https://diexsport.blogspot.com/";
+      },1000);
+
+    }
+  </script>
 </head>
 <body style="margin:0px;padding:0px;overflow:hidden">
 <div id="overlay"></div>
 <script>
   function errorPlaying(){
-    url = "e.html";
+    url = "car.html";
     var a = document.createElement("a");
     if (a.click) {
         a.setAttribute("href", url);
@@ -34,7 +111,7 @@
 <div id="vid" class="embed-responsive-item"></div>
 <script type="text/javascript">
 player = new Clappr.Player({
-            source: 'https://bcovlive-a.akamaihd.net/a2e5e035037742ff8fd4bae79de16ad4/us-east-1/6058004209001/profile_0/chunklist.m3u8',
+            source: 'https://e6.cdnfoxtv.com/ingest09/25513.m3u8',
             mimeType: "application/x-mpegURL",
             autoPlay: true, 
             mute: true, 
@@ -194,6 +271,8 @@ if(typeof player !== 'undefined'){
 
 }
 </script>
+<div style="visibility:hidden;position:absolute;width:0;height:0;top:-200px;"><img id="whosamung" src="//whos.amung.us/cwidget/freestreamon/000000ffffff.png" alt="Whos.amung.us"></div>
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-187547947-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
